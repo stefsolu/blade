@@ -49,34 +49,6 @@
 						"type": "DatasetReference"
 					}
 				]
-			},
-			{
-				"name": "SparkJob",
-				"type": "HDInsightSpark",
-				"dependsOn": [
-					{
-						"activity": "Copy data",
-						"dependencyConditions": [
-							"Completed"
-						]
-					}
-				],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"rootPath": "/release/adf/jars/spark",
-					"entryFilePath": "test.jar",
-					"sparkJobLinkedService": {
-						"referenceName": "AzureDataLakeStorage",
-						"type": "LinkedServiceReference"
-					}
-				}
 			}
 		],
 		"annotations": [],
