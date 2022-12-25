@@ -68,7 +68,15 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"rootPath": "/release/adf/jars/spark",
+					"entryFilePath": "test.jar",
+					"sparkJobLinkedService": {
+						"referenceName": "AzureDataLakeStorage",
+						"type": "LinkedServiceReference"
+					}
+				}
 			}
 		],
 		"annotations": [],
