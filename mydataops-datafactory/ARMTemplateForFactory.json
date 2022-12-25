@@ -164,7 +164,7 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "Copy data",
+						"name": "Copy data V2",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
